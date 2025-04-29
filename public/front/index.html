@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  Main Meta Tags  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  Main Styles  -->
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--  Title  -->
+    <title>Mint</title>
+
+    <!--  Favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<main id="desktop-main" class="hidden md:grid grid-cols-1 min-h-screen md:grid-cols-2 lg:grid-cols-3">
+    <!--  Form Section  -->
+    <section class="px-8 md:px-0  bg-[#002C28] col-span-1 md:col-span-2 lg:col-span-1 max-h-full">
+        <div id="left-section" class="container flex flex-col items-center md:px-4 lg:px-6 xl:px-8">
+            <img id="logo" src="./assets/images/logo.svg" alt="logo" class="my-12 md:my-6 lg:my-8 xl:my-10"/>
+            <p class="font-bold text-6xl text-[#F0EBC8] md:text-5xl lg:text-6xl xl:text-7xl">
+                REGISTER
+            </p>
+            <p class="text-3xl text-[#F0EBC8] mb-12 md:mb-8 lg:mb-10 xl:mb-12">
+                to know more
+            </p>
+
+            <!--     Form       -->
+
+            <form id="form" class="flex flex-col items-center w-full md:w-3/4 lg:w-2/3 xl:w-1/2">
+                <div class="flex flex-col mb-4 w-full">
+                    <label for="name" class="text-[#F0EBC8]">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Value" class="bg-white p-2 rounded-lg"/>
+                </div>
+
+                <div class="flex flex-col mb-4 w-full">
+                    <label for="phone" class="text-[#F0EBC8]">Phone number</label>
+                    <div class="flex flex-row w-full">
+                        <input type="text" id="code" name="phone" placeholder="002"
+                               class="bg-white p-2 rounded-lg w-1/5 me-2"/>
+                        <input type="text" id="phone" name="phone" placeholder="Value"
+                               class="bg-white p-2 rounded-lg w-full"/>
+                    </div>
+                </div>
+
+                <div class="flex flex-col mb-4 w-full">
+                    <label for="email" class="text-[#F0EBC8]">Email Address</label>
+                    <input type="text" id="email" name="email" placeholder="Value" class="bg-white p-2 rounded-lg"/>
+                </div>
+
+                <div class="flex flex-col mb-4 w-full">
+                    <label for="unit" class="text-[#F0EBC8]">Type of Unit</label>
+                    <select type="text" id="unit" name="email"
+                            class="bg-white  p-2 rounded-lg" title="Unit">
+                        <option value="" disabled selected>Value</option>
+                        <option value="1">Value</option>
+                        <option value="2">Value</option>
+                        <option value="3">Value</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="bg-[#BED747] py-1.5 rounded-lg mt-2 w-3/4 text-[#002C28">
+                    Submit
+                </button>
+            </form>
+
+            <p class="text-[#F0EBC8] my-12 text-center w-4/6 font-light">
+                © Copyright MINT Real Estate Assets. All Rights Reserved Designed and developed by Elephant Phunk
+            </p>
+        </div>
+    </section>
+
+    <!--  Main Section  -->
+    <section class="col-span-2 bg-[#f0ebc8] p-16">
+        <!--   Slider     -->
+        <div class="slideshow-container">
+            <div class="mySlides fade w-full">
+                <img src="./assets/images/slider.png" class="w-full">
+            </div>
+
+            <div class="mySlides fade w-full">
+                <img src="./assets/images/slider.png" class="w-full">
+            </div>
+
+            <div class="mySlides fade w-full">
+                <img src="./assets/images/slider.png" class="w-full">
+            </div>
+
+            <div class="mySlides fade w-full">
+                <img src="./assets/images/slider.png" class="w-full">
+            </div>
+
+        </div>
+        <br>
+        <!--    Slider Dots    -->
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <!--    Fustat View Description    -->
+        <div class="flex flex-col justify-center items-center">
+            <div class="flex flex-col justify-center items-center sm-px-8 md:px-10 lg:px-40 xl:px-44  my-12 md:my-6 lg:my-8 xl:my-10 bg-white p-8 w-5/6 rounded-2xl">
+                <img src="./assets/images/fustat.svg" alt="fustat" class="mb-12"/>
+                <p class="text-lg md:text-xl text-[#002C28] mb-12 md:mb-8 lg:mb-10 xl:mb-12 font-normal text-center">
+                    The "Fustat View" compound has been designed to be a fully serviced and equipped community,
+                    offering
+                    residents and visitors an exceptional living experience. The project includes a diverse range of
+                    residential, hotel, commercial, and administrative units, creating multiple investment
+                    opportunities
+                    and providing a wide array of options for investors and residents.
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+            <button class="bg-[#BED747] py-1.5 rounded-xl mt-2 w-44 md:w-52 text-[#002C28]">
+                Download Brochure
+            </button>
+        </div>
+    </section>
+</main>
+
+<main id="mobile-main" class="block md:hidden grid grid-cols-1 min-h-screen md:grid-cols-2 lg:grid-cols-3">
+    <div class="flex justify-center items-center pt-8 bg-[#f0ebc8]">
+        <img src="./assets/images/MINT%20Logo.svg" alt="mint" class=""/>
+    </div>
+    <!--  Main Section  -->
+    <section class="col-span-2 bg-[#f0ebc8] p-16">
+        <!--   Slider     -->
+        <div class="slideshow-container">
+            <div class="mobile-mySlides fade w-full">
+                <img src="./assets/images/slider.png" class="w-full">
+            </div>
+
+            <div class="mobile-mySlides fade w-full">
+                <img src="./assets/images/slider.png" class="w-full">
+            </div>
+
+            <div class="mobile-mySlides fade w-full">
+                <img src="./assets/images/slider.png" class="w-full">
+            </div>
+
+            <div class="mobile-mySlides fade w-full">
+                <img src="./assets/images/slider.png" class="w-full">
+            </div>
+
+        </div>
+        <br>
+        <!--    Slider Dots    -->
+        <div style="text-align:center">
+            <span class="mobile-dot"></span>
+            <span class="mobile-dot"></span>
+            <span class="mobile-dot"></span>
+            <span class="mobile-dot"></span>
+        </div>
+
+        <!--    Fustat View Description    -->
+        <div class="flex flex-col justify-center items-center">
+            <div class="flex flex-col justify-center items-center sm-px-8 md:px-10 lg:px-40 xl:px-44  my-12 md:my-6 lg:my-8 xl:my-10 bg-white p-8 w-5/6 rounded-2xl">
+                <img src="./assets/images/fustat.svg" alt="fustat" class="mb-12"/>
+                <p class="text-lg md:text-xl text-[#002C28] mb-12 md:mb-8 lg:mb-10 xl:mb-12 font-normal text-center">
+                    The "Fustat View" compound has been designed to be a fully serviced and equipped community,
+                    offering
+                    residents and visitors an exceptional living experience. The project includes a diverse range of
+                    residential, hotel, commercial, and administrative units, creating multiple investment
+                    opportunities
+                    and providing a wide array of options for investors and residents.
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+            <button class="bg-[#BED747] py-1.5 rounded-xl mt-2 w-44 md:w-52 text-[#002C28]">
+                Download Brochure
+            </button>
+        </div>
+    </section>
+
+    <!--  Form Section  -->
+    <section class="px-8 md:px-0  bg-[#002C28] col-span-1 md:col-span-2 lg:col-span-1 max-h-full">
+        <div id="left-section-mobile" class="container flex flex-col items-center md:px-4 lg:px-6 xl:px-8">
+            <img src="./assets/images/logo.svg" alt="logo" class="my-12 md:my-6 lg:my-8 xl:my-10"/>
+            <p class="font-bold text-6xl text-[#F0EBC8] md:text-5xl lg:text-6xl xl:text-7xl">
+                REGISTER
+            </p>
+            <p class="text-3xl text-[#F0EBC8] mb-12 md:mb-8 lg:mb-10 xl:mb-12">
+                to know more
+            </p>
+
+            <!--     Form       -->
+
+            <form id="mobile-form" class="flex flex-col items-center w-full md:w-3/4 lg:w-2/3 xl:w-1/2">
+                <div class="flex flex-col mb-4 w-full">
+                    <label for="name" class="text-[#F0EBC8]">Name</label>
+                    <input type="text" id="mobile-name" name="name" placeholder="Value"
+                           class="bg-white p-2 rounded-lg"/>
+                </div>
+
+                <div class="flex flex-col mb-4 w-full">
+                    <label for="phone" class="text-[#F0EBC8]">Phone number</label>
+                    <div class="flex flex-row w-full">
+                        <input type="text" id="mobile-code" name="phone" placeholder="002"
+                               class="bg-white p-2 rounded-lg w-1/5 me-2"/>
+                        <input type="text" id="mobile-phone" name="phone" placeholder="Value"
+                               class="bg-white p-2 rounded-lg w-full"/>
+                    </div>
+                </div>
+
+                <div class="flex flex-col mb-4 w-full">
+                    <label for="email" class="text-[#F0EBC8]">Email Address</label>
+                    <input type="text" id="mobile-email" name="email" placeholder="Value"
+                           class="bg-white p-2 rounded-lg"/>
+                </div>
+
+                <div class="flex flex-col mb-4 w-full">
+                    <label for="unit" class="text-[#F0EBC8]">Type of Unit</label>
+                    <select type="text" id="mobile-unit" name="email"
+                            class="bg-white  p-2 rounded-lg" title="Unit">
+                        <option value="" disabled selected>Value</option>
+                        <option value="1">Value</option>
+                        <option value="2">Value</option>
+                        <option value="3">Value</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="bg-[#BED747] py-1.5 rounded-lg mt-2 w-3/4 text-[#002C28">
+                    Submit
+                </button>
+            </form>
+
+            <p class="text-[#F0EBC8] my-12 text-center w-4/6 font-light">
+                © Copyright MINT Real Estate Assets. All Rights Reserved Designed and developed by Elephant Phunk
+            </p>
+        </div>
+    </section>
+</main>
+
+
+<script>
+    let slideIndex = 0;
+    let mobileSlideIndex = 0;
+    showSlides();
+    showMobileSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+    function showMobileSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mobile-mySlides");
+        let dots = document.getElementsByClassName("mobile-dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        mobileSlideIndex++;
+        if (mobileSlideIndex > slides.length) {
+            mobileSlideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[mobileSlideIndex - 1].style.display = "block";
+        dots[mobileSlideIndex - 1].className += " active";
+        setTimeout(showMobileSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+</body>
+</html>

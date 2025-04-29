@@ -21,6 +21,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        "role",
+        "assign_to",
+        "created_by"
     ];
 
     /**
@@ -42,4 +45,27 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function employees()
+    {
+        return $this->hasMany(User::class); // if hierarchy needed
+    }
+
+    public function customers()
+    {
+        return $this->hasMany(Customer::class, 'assigned_to');
+    }
+
+
+    public function actions()
+    {
+        return $this->hasMany(Action::class);
+    }
+
+    public function creator()
+    {
+        return $this->belongsTo(User::class, 'created_by');
+    }
+
+
 }
